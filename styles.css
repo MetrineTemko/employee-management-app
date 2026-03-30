@@ -1,13 +1,12 @@
-.topnav{
-    padding:10px;
-    font-weight:bold;
+.links{
+    padding: 10px;
+    font-weight: bold;
 }
-
-.topnav a{
-    text-decoration:none;
+.links a{
+    text-decoration: none;
     color: black;
     margin: 0 15px;
-}
+} 
 .form{
     width: auto;
     font-family: Tahoma;
@@ -25,7 +24,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: lightblue solid 2px;
+    border: rgba(173, 216, 230, 0.453) solid 2px;
     padding: 3px;
 }
 .sidebar{
@@ -34,7 +33,7 @@
     position: fixed;
     background-color: rgb(194, 157, 129);
     left: 0;
-    top: 120px;
+    top: 100px;
 }
 .sidebar2{
     width: 240px;
@@ -42,7 +41,7 @@
     position: fixed;
     background-color: rgb(194, 157, 129);
     left: 0;
-    top: 0;
+    top: 40px;
 }
 .sidebar ul, .sidebar2 ul{
     list-style-type: none;
@@ -51,7 +50,7 @@
 .sidebar ul li a, .sidebar2 ul li a{
     text-decoration: none;
     color: black;
-}    
+}  
 .pic{
     padding-left: 10px;
     padding-top: 15px;
@@ -68,18 +67,21 @@
     flex: 1;
     padding: 20px;
     border-radius: 5px;
-    background-color: #18a558;
+    background-color: #18a5577a;
 }
 
 .positions{
     flex: 1;
     padding: 20px;
     border-radius: 5px;
-    background-color: #1fa9c9;
+    background-color: #1faac978;
 }
 .main{
     background-image: url(Images/background.webp);
 }
 .table{
+    margin-left: 240px;
+}
+#output{
     margin-left: 240px;
 }
