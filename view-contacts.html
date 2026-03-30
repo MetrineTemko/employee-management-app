@@ -5,10 +5,18 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body class="main">
+        <div class="links">
+            <a href="index.html">Home</a>
+            <span>|</span>
+            <a href="new-contact.html">Add Contact</a>
+            <span>|</span>
+            <a href="view-contacts.html">View Contacts Details</a>
+        </div>
         <div class="sidebar2">
             <div class="pic">
                 <img src="Images/temko.jpeg" alt="profile picture" class="profile">
                 <p>Metrine Temko Tallian</p>
+                <small style="color: greenyellow;">Online</small>
             </div>
             <hr>
             <ul>
@@ -19,7 +27,7 @@
         </div>
         <div class="table">
             <h2>Employee Contacts Table</h2>
-            <table border="1" cellpadding="5" cellspacing="0">
+            <table border="1" cellpadding="5" cellspacing="0" id="contactsTable">
                 <tr>
                     <th>Name</th>
                     <th>Email</th>
@@ -33,9 +41,9 @@
                     <td>0748845678</td>
                     <td>Marketing</td>
                     <td>
-                        <button>Details</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
+                        <button onclick="viewDetails()">Details</button>
+                        <button onclick="editContact()">Edit</button>
+                        <button onclick="deleteContact()">Delete</button>
                     </td>
                 </tr>
                 <tr>
@@ -44,9 +52,9 @@
                     <td>0752795678</td>
                     <td>Sales</td>
                     <td>
-                        <button>Details</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
+                        <button onclick="viewDetails()">Details</button>
+                        <button onclick="editContact()">Edit</button>
+                        <button onclick="deleteContact()">Delete</button>
                     </td>
                 </tr>
                 <tr>
@@ -55,9 +63,9 @@
                     <td>0752479012</td>
                     <td>Human Resources</td>
                     <td>
-                        <button>Details</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
+                        <button onclick="viewDetails()">Details</button>
+                        <button onclick="editContact()">Edit</button>
+                        <button onclick="deleteContact()">Delete</button>
                     </td>
                 </tr>
                 <tr>
@@ -66,9 +74,9 @@
                     <td>0709876548</td>
                     <td>Finance</td>
                     <td>
-                        <button>Details</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
+                        <button onclick="viewDetails()">Details</button>
+                        <button onclick="editContact()">Edit</button>
+                        <button onclick="deleteContact()">Delete</button>
                     </td>
                 </tr> 
                 <tr>
@@ -77,12 +85,13 @@
                     <td>0710293847</td>
                     <td>Information Technology</td>
                     <td>
-                        <button>Details</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
+                        <button onclick="viewDetails()">Details</button>
+                        <button onclick="editContact()">Edit</button>
+                        <button onclick="deleteContact()">Delete</button>
                     </td>
                 </tr>      
             </table>
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
